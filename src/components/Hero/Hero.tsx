@@ -73,17 +73,6 @@ const TypeAnimationStyled = styled(TypeAnimation)`
   }
 `;
 
-const HeroDescription = styled(motion.p)`
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  
-  @media (max-width: 768px) {
-    font-size: 1.1rem;
-  }
-`;
-
 const CTAButton = styled(motion.button)`
   background: var(--main-color);
   color: white;
@@ -127,7 +116,7 @@ const Hero: React.FC = () => {
               2000,
             ]}
             wrapper="span"
-            speed={160}
+            speed={50}
             repeat={Infinity}
             cursor={false}
           />
